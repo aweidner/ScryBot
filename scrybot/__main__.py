@@ -3,13 +3,10 @@ import sys
 import discord
 
 from scrybot.parser import parser
-from scrybot.cogs import SearchCog
 from scrybot import bot
 
 
 args = parser.parse_args()
-
-bot.add_cog(SearchCog(bot, args.channel_name))
 
 # Read the token from the provided file
 try:
@@ -25,4 +22,4 @@ if not token:
     sys.exit(1)
 
 # Run the bot with the provided token
-bot.run(args)
+bot.run(token)
