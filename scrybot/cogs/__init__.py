@@ -1,0 +1,1 @@
+from scrybot.cogs.search import SearchCog
