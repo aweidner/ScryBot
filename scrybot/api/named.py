@@ -2,7 +2,8 @@ import json
 import re
 import requests
 import concurrent.futures
-
+import sys
+import asyncio
 
 def fetch_card_info(card_name):
     url = f"https://api.scryfall.com/cards/named?fuzzy={card_name}"
@@ -49,3 +50,9 @@ async def search_cards(content):
                     continue
 
     return images
+
+def main():
+    print(asyncio.run(search_cards(sys.argv[1])))
+
+if __name__ == "__main__":
+    main()

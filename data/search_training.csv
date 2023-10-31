@@ -1,0 +1,119 @@
+cards that are white,https://api.scryfall.com/cards/search?q=c:white
+cards that are red,https://api.scryfall.com/cards/search?q=c:red
+green cards,https://api.scryfall.com/cards/search?q=c:green
+black cards,https://api.scryfall.com/cards/search?q=c:black
+blue cards,https://api.scryfall.com/cards/search?q=c:blue
+colorless cards,https://api.scryfall.com/cards/search?q=c:colorless
+multicolor cards,https://api.scryfall.com/cards/search?q=c:multicolor
+cards that are at least white and blue but not red,https://api.scryfall.com/cards/search?q=color>=uw -c:red
+cards that are at least red and black but not white or green,https://api.scryfall.com/cards/search?q=color>=rb -c:white -c:green
+cards that are at least blue but not black,https://api.scryfall.com/cards/search?q=color>=u -c:blue
+non-black cards,https://api.scryfall.com/cards/search?q=-c:black
+any cards that are not black or blue,https://api.scryfall.com/cards/search?q=-c:black -c:blue
+esper cards,https://api.scryfall.com/cards/search?q=id:esper
+azorius cards,https://api.scryfall.com/cards/search?q=id:azorius
+rakdos cards,https://api.scryfall.com/cards/search?q=id:rakdos
+dimir cards,https://api.scryfall.com/cards/search?q=id:dimir
+izzet cards,https://api.scryfall.com/cards/search?q=id:izzet
+orzhov cards,https://api.scryfall.com/cards/search?q=id:orzhov
+golgari cards,https://api.scryfall.com/cards/search?q=id:golgari
+boros cards,https://api.scryfall.com/cards/search?q=id:boros
+simic cards,https://api.scryfall.com/cards/search?q=id:simic
+selesnya cards,https://api.scryfall.com/cards/search?q=id:selesnya
+bant cards,https://api.scryfall.com/cards/search?q=id:bant
+grixis cards,https://api.scryfall.com/cards/search?q=id:grixis
+gruul cards,https://api.scryfall.com/cards/search?q=id:gruul
+jund cards,https://api.scryfall.com/cards/search?q=id:jund
+naya cards,https://api.scryfall.com/cards/search?q=id:naya
+chaos cards,https://api.scryfall.com/cards/search?q=id:chaos
+aggression cards,https://api.scryfall.com/cards/search?q=id:aggression
+altruism cards,https://api.scryfall.com/cards/search?q=id:altruism
+growth cards,https://api.scryfall.com/cards/search?q=id:growth
+artifice cards,https://api.scryfall.com/cards/search?q=id:artifice
+abzan cards,https://api.scryfall.com/cards/search?q=id:abzan
+jeskai cards,https://api.scryfall.com/cards/search?q=id:jeskai
+saultai cards,https://api.scryfall.com/cards/search?q=id:saultai
+temur cards,https://api.scryfall.com/cards/search?q=id:temur
+mardu cards,https://api.scryfall.com/cards/search?q=id:mardu
+lands,https://api.scryfall.com/cards/search?q=t:land
+sorceries,https://api.scryfall.com/cards/search?q=t:sorcery
+instants,https://api.scryfall.com/cards/search?q=t:instant
+creatures,https://api.scryfall.com/cards/search?q=t:creature
+artifacts,https://api.scryfall.com/cards/search?q=t:artifact
+planeswalkers,https://api.scryfall.com/cards/search?q=t:planeswalker
+enchantments,https://api.scryfall.com/cards/search?q=t:enchantments
+colorless land cards,https://api.scryfall.com/cards/search?q=id:colorless t:land
+instants that are at least red and blue but not black or white,https://api.scryfall.com/cards/search?q=t:instant c:ru -c:black -c:white
+creatures you can play with an esper commander,https://api.scryfall.com/cards/search?q=id<=esper t:creature
+planeswalkers that you can plan with a jund commander,https://api.scryfall.com/cards/search?q=id<=jund t:planeswalker
+merfolk,https://api.scryfall.com/cards/search?q=t:merfolk
+legendary goblins,https://api.scryfall.com/cards/search?q=t:goblin t:legendary
+non-wizard cards,https://api.scryfall.com/cards/search?q=-t:wizard
+dragons that are not artifacts,https://api.scryfall.com/cards/search?q=t:dragon -t:artifact
+dogs that aren't creatures,https://api.scryfall.com/cards/search?q=t:dog -t:creature
+cats that are esper and creatures,https://api.scryfall.com/cards/search?q=t:creature id<=esper t:cat
+creatures that deal with drawing cards,https://api.scryfall.com/cards/search?q=o:draw t:creature
+spells that draw cards,https://api.scryfall.com/cards/search?q=o:draw
+planeswalkers that draw cards,https://api.scryfall.com/cards/search?q=o:draw t:planeswalker
+cards that draw cards,https://api.scryfall.com/cards/search?q=o:draw
+lands that enter the battlefield tapped,https://api.scryfall.com/cards/search?q=o:"~ enters the battlefield tapped" t:land
+cards with enter the battlefield effects,https://api.scryfall.com/cards/search?q=o:"When ~ enters the battlefield"
+cards with leave the battlefield effects,https://api.scryfall.com/cards/search?q=o:"When ~ leaves the battlefield"
+cards that do something when they leave,https://api.scryfall.com/cards/search?q=o:"When ~ leaves the battlefield"
+cards that do something when they die,https://api.scryfall.com/cards/search?q=o:"When ~ dies"
+cards that exile,https://api.scryfall.com/cards/search?q=o:exile
+cards that create tokens,https://api.scryfall.com/cards/search?q=o:token
+cards that create a token when they die,https://api.scryfall.com/cards/search?q=o:token o:die
+cards that create a token when they enter the battlefield,https://api.scryfall.com/cards/search?q=o:token o:enter
+cards that allow you to place counters,https://api.scryfall.com/cards/search?q=o:counter
+cards that let you add +1/+1 counters,https://api.scryfall.com/cards/search?q=o:counter o:+1/+1
+cards that give -1/-1 counters,https://api.scryfall.com/cards/search?q=o:counter o:-1/-1
+cards that have undying,https://api.scryfall.com/cards/search?q=keyword:undying
+cards that force your opponent to shuffle their library,https://api.scryfall.com/cards/search?q=o:shuffle o:opponent
+cards that let you search,https://api.scryfall.com/cards/search?q=o:search
+cards that let you tutor,https://api.scryfall.com/cards/search?q=o:tutor
+tutors that are black,https://api.scryfall.com/cards/search?q=o:tutor c:black
+flying creatures,https://api.scryfall.com/cards/search?q=keyword:flying t:creature
+creatures with haste,https://api.scryfall.com/cards/search?q=keyword:haste t:creature
+creatures with lifelink,https://api.scryfall.com/cards/search?q=keyword:lifelink t:creature
+creatures with doublestrike,https://api.scryfall.com/cards/search?q=keyword:doublestrike t:creature
+sorceries that cost at most 1 mana,https://api.scryfall.com/cards/search?q=m<=1 t:sorcery
+blue cards with even mana cost,https://api.scryfall.com/cards/search?q=c:blue manavalue:even
+cards with odd mana cost,https://api.scryfall.com/cards/search?q=manavalue:odd
+cards with odd mana value,https://api.scryfall.com/cards/search?q=manavalue:odd
+costs 2WW to cast,https://api.scryfall.com/cards/search?q=m:2WW
+costs BB,https://api.scryfall.com/cards/search?q=m:BB
+costs 2 to cast,https://api.scryfall.com/cards/search?q=m:2
+x cost cards,https://api.scryfall.com/cards/search?q=m:x
+cards that cost less than 5 to cast,https://api.scryfall.com/cards/search?q=m<5
+cards with 0 power,https://api.scryfall.com/cards/search?q=pow=0
+cards with at least 3 power,https://api.scryfall.com/cards/search?q=pow>=3
+cards with more than 4 power,https://api.scryfall.com/cards/search?q=pow>4
+cards with less than 4 power,https://api.scryfall.com/cards/search?q=pow<4
+cards with at most 4 power,https://api.scryfall.com/cards/search?q=pow<=4
+cards with x power,https://api.scryfall.com/cards/search?q=pow:x
+cards with 0 toughness,https://api.scryfall.com/cards/search?q=tou=0
+cards with at least 3 toughness,https://api.scryfall.com/cards/search?q=tou>=3
+cards with more than 4 toughness,https://api.scryfall.com/cards/search?q=tou>4
+cards with less than 4 toughness,https://api.scryfall.com/cards/search?q=tou<4
+cards with at most 4 toughness,https://api.scryfall.com/cards/search?q=tou<=4
+cards with x toughness,https://api.scryfall.com/cards/search?q=tou:x
+cards with 0 loyalty,https://api.scryfall.com/cards/search?q=loyalty=0
+cards with at least 3 loyalty,https://api.scryfall.com/cards/search?q=loyalty>=3
+cards with more than 4 loyalty,https://api.scryfall.com/cards/search?q=loyalty>4
+cards with less than 4 loyalty,https://api.scryfall.com/cards/search?q=loyalty<4
+cards with at most 4 loyalty,https://api.scryfall.com/cards/search?q=loyalty<=4
+cards with x loyalty,https://api.scryfall.com/cards/search?q=loyalty:x
+spells,https://api.scryfall.com/cards/search?q=is:spell
+permanants,https://api.scryfall.com/cards/search?q=is:permanent
+historic cards,https://api.scryfall.com/cards/search?q=is:historic
+creatures that can be part of your party,https://api.scryfall.com/cards/search?q=is:party
+esper commanders that cost less than 5 mana,https://api.scryfall.com/cards/search?q=id=esper t:legendary t:creature m<=2buw
+red green planeswalkers that can be used as your commander,https://api.scryfall.com/cards/search?q=id=rg t:planeswalker o:"can be your commander" 
+named dreadmaw,https://api.scryfall.com/cards/search?q=dreadmaw
+named recovery,https://api.scryfall.com/cards/search?q=recovery
+where the name includes ur-dragon,https://api.scryfall.com/cards/search?q=ur-dragon
+blue commanders that cost less than 3,https://api.scryfall.com/cards/search?q=m<=3 c:blue t:legend t:creature
+izzet commanders that draw cards,https://api.scryfall.com/cards/search?q=id=izzet o:draw t:legend t:creature
+izzet commanders that are planeswalkers,https://api.scryfall.com/cards/search?q=id=izzet t:planeswalker o:"~ can be your commander"
+black or blue walls,https://api.scryfall.com/cards/search?q=(t:wall c:black) or (t:wall c:blue)

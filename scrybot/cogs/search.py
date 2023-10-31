@@ -1,6 +1,6 @@
 from discord.ext import commands
 
-from scrybot.search import search_cards
+from scrybot.api.named import search_cards
 
 class SearchCog(commands.Cog):
     def __init__(self, bot):
