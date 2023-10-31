@@ -49,8 +49,8 @@ class SearchCog(commands.Cog):
         if message.author.bot:
             return
 
-        async with message.channel.typing():
-            if str(self.bot.user.id) in message.content:
+        if str(self.bot.user.id) in message.content:
+            async with message.channel.typing():
                 result = await search(message.content)
                 url = encode_url(result["content"])
                 response = requests.get(url)
@@ -63,8 +63,8 @@ class SearchCog(commands.Cog):
                     body = response.json()
                     details = body["details"]
                     await message.channel.send("\n".join([f"Requested: {url}", details]), reference=message)
-            else:
-                images = await search_cards(message.content)
-                
-                if images:
-                    await message.channel.send("\n".join(images), reference=message)
+        else:
+            images = await search_cards(message.content)
+            
+            if images:
+                await message.channel.send("\n".join(images), reference=message)
