@@ -39,6 +39,7 @@ def encode_url(url):
     
     return new_url
 
+
 class SearchCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -48,21 +49,22 @@ class SearchCog(commands.Cog):
         if message.author.bot:
             return
 
-        if str(self.bot.user.id) in message.content:
-            result = await search(message.content)
-            url = encode_url(result["content"])
-            response = requests.get(url)
-            if response.status_code == 200:
-                # TODO: If this is less than like 3 cards, output the card image.  Otherwise output
-                # The full link
-                translated_url = translate_url(url)
-                await message.channel.send(translated_url, reference=message)
+        async with message.channel.typing():
+            if str(self.bot.user.id) in message.content:
+                result = await search(message.content)
+                url = encode_url(result["content"])
+                response = requests.get(url)
+                if response.status_code == 200:
+                    # TODO: If this is less than like 3 cards, output the card image.  Otherwise output
+                    # The full link
+                    translated_url = translate_url(url)
+                    await message.channel.send(translated_url, reference=message)
+                else:
+                    body = response.json()
+                    details = body["details"]
+                    await message.channel.send("\n".join([f"Requested: {url}", details]), reference=message)
             else:
-                body = response.json()
-                details = body["details"]
-                await message.channel.send("\n".join([f"Requested: {url}", details]), reference=message)
-        else:
-            images = await search_cards(message.content)
-            
-            if images:
-                await message.channel.send("\n".join(images), reference=message)
+                images = await search_cards(message.content)
+                
+                if images:
+                    await message.channel.send("\n".join(images), reference=message)
