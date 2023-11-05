@@ -27,10 +27,6 @@ def translate_csv_to_json(csv_filename):
     return json_list
 
 
-# Read in the token and export it as an environment variable
-with open(".openai-token") as openai_token:
-    os.environ["OPENAI_API_KEY"] = openai_token.read().strip()
-
 # create a temporary file for the json data
 with tempfile.NamedTemporaryFile(mode='w+', suffix='.json', delete=True) as temp_json:
     # Read in the csv data
