@@ -242,3 +242,53 @@ green demon creatures that aren't red,https://api.scryfall.com/cards/search?q=ty
 red white and blue doctors,https://api.scryfall.com/cards/search?q=type:Doctor color:red color:white color:blue
 viashino creatures that are red black and green,https://api.scryfall.com/cards/search?q=type:Viashino color:red color:black color:green
 esper spellshapers,https://api.scryfall.com/cards/search?q=type:Spellshaper id:esper
+Card that cost 9 and one blue mana,https://api.scryfall.com/cards/search?q=mana:9{U}
+Cards that include a cost of 2 colorless mana and a black,https://api.scryfall.com/cards/search?q=mana:2{B}
+Cards that cost 3 mana and a red,https://api.scryfall.com/cards/search?q=mana:3{R}
+Cards that cost one white mana,https://api.scryfall.com/cards/search?q=mana:0{W}
+Cards with cmc less than or equal to 4,https://api.scryfall.com/cards/search?q=manavalue<=4
+Cards that cost 7 colorless and one black,https://api.scryfall.com/cards/search?q=mana:7{B}
+Cards that have even mana value,https://api.scryfall.com/cards/search?q=manavalue:even
+Cards that cost less than 8,https://api.scryfall.com/cards/search?q=manavalue<8
+Cards that cost one black,https://api.scryfall.com/cards/search?q=mana:0{B}
+Cards that have 9 colorless and one white in their cost,https://api.scryfall.com/cards/search?q=mana:9{W}
+"Cards that cost 1 colorless, a red, and black mana",https://api.scryfall.com/cards/search?q=mana:1{R}{B}
+Cards that cost 6 and red,https://api.scryfall.com/cards/search?q=mana:6{R}
+Cards that cost 9 and green,https://api.scryfall.com/cards/search?q=mana:9{G}
+Cards that include a cost of white and black,https://api.scryfall.com/cards/search?q=mana:{W}{B}
+Cards that have even mana value,https://api.scryfall.com/cards/search?q=manavalue:even
+Cards that cost at least one blue and red,https://api.scryfall.com/cards/search?q=mana:{U}{R}
+Cards that have a mana value of odd,https://api.scryfall.com/cards/search?q=manavalue:odd
+Cards that cost at least 7 mana,https://api.scryfall.com/cards/search?q=manavalue>=7
+Cards that cost at most 8 mana,https://api.scryfall.com/cards/search?q=manavalue<=8
+Cards that cost at least one white and one blue,https://api.scryfall.com/cards/search?q=mana:{W}{U}
+Cards that cost two red and one black,https://api.scryfall.com/cards/search?q=mana:{R}{B}{R}
+Cards taht cost a red and a white,https://api.scryfall.com/cards/search?q=mana:{R}{W}
+Cards which do not cost 6 mana,https://api.scryfall.com/cards/search?q=manavalue!=6
+Cards that cost at most 4 cmc,https://api.scryfall.com/cards/search?q=manavalue<=4
+Cards that include costs of a black and a green,https://api.scryfall.com/cards/search?q=mana:{G}{B}
+Cards that have cmc including red and blue,https://api.scryfall.com/cards/search?q=mana:{R}{U}
+Cards that cost at most one white mana to cast,https://api.scryfall.com/cards/search?q=mana<={W}
+Cards that do not cost exactly one red mana to cast,https://api.scryfall.com/cards/search?q=mana!={R}
+Cards that cost at most 2 red and a white to cast,https://api.scryfall.com/cards/search?q=mana<={R}{R}{W}
+Cards taht cost at least two green to cast,https://api.scryfall.com/cards/search?q=mana>={G}{G}
+Cards that cost at least a black and a white to cast,https://api.scryfall.com/cards/search?q=mana:{B}{W}
+Cards that cost less than one blue and one green to cast,https://api.scryfall.com/cards/search?q=mana<{U}{G}
+Cards that do not cost three blue to cast,https://api.scryfall.com/cards/search?q=mana!={U}{U}{U}
+Cards that do not cost one green to cast,https://api.scryfall.com/cards/search?q=mana!={G}
+Cards that cost less than two green to cast,https://api.scryfall.com/cards/search?q=mana<{G}{G}
+Cards that cost at least a white and a blue to cast,https://api.scryfall.com/cards/search?q=mana:{W}{U}
+Cards that have phyrexian mana in their cost,https://api.scryfall.com/cards/search?q=is:phyrexian
+Cards that have hybrid mana in their cost,https://api.scryfall.com/cards/search?q=is:hybrid
+Cards with one phyrexian red mana in their cost,https://api.scryfall.com/cards/search?q=mana:{r/p}
+Cards with one phyrexian green mana in their cost,https://api.scryfall.com/cards/search?q=mana:{g/p}
+Cards with hybrid blue and black mana in their cost,https://api.scryfall.com/cards/search?q=mana:{u/b}
+Cards with hybrid red and white mana in their cost,https://api.scryfall.com/cards/search?q=mana:{r/w}
+Cards that give three devotion to black,https://api.scryfall.com/cards/search?q=devotion:{b}{b}{b}
+Cards that give one devotion to red,https://api.scryfall.com/cards/search?q=devotion:{r}
+Cards that produce white mana,https://api.scryfall.com/cards/search?q=produces:{w}
+Cards that produce blue mana,https://api.scryfall.com/cards/search?q=produces:{u}
+Cards that produce uncolored mana,https://api.scryfall.com/cards/search?q=produces:{c}
+Cards that produce red and blue mana,https://api.scryfall.com/cards/search?q=produces:{r}{u}
+Cards that produce red or blue mana,https://api.scryfall.com/cards/search?q=produces:{r} or produces:{u}
+Artifacts you can use in a golgari commander that have 2 green in their casting cost,https://api.scryfall.com/cards/search?q=type:Artifact id:golgari mana:{g}{g}

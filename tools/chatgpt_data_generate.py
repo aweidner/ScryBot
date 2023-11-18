@@ -718,7 +718,42 @@ def oracleProvider():
 
 
 def manaCostProvider():
-    pass
+    # Choose the category
+    category = "manavalue" if random.random() < 0.01 else "mana"
+
+    if category == "manavalue":
+        # Choose an operator
+        operators = ["<", ">", "!=", "<=", ">=", ":"]
+        operator = random.choice(operators)
+
+        # Choose a number or even/odd
+        if operator == ":":
+            number = random.choice(["even", "odd"])
+        else:
+            number = random.randint(0, 10)
+
+        # Concatenate components
+        mana_cost = f"{category}{operator}{number}"
+
+    else:
+        operators = ["<", ">", "!=", "<=", ">=", ":"]
+        operator = random.choice(operators)
+        # Append ":" and choose a random number
+        mana_cost = f"{category}{operator}"
+        #mana_number = random.randint(0, 10)
+        #mana_cost += str(mana_number)
+
+        # Choose symbols
+        symbols = ["{R}", "{B}", "{G}", "{U}", "{W}"]
+
+        probabilities = [1, 0.8, 0.3, 0.1]  # Probabilities for 2nd, 3rd, 4th and 5th color
+        for prob in probabilities:
+            if random.random() < prob:
+                mana_cost += random.choice(symbols)
+            else:
+                break
+
+    return mana_cost
 
 
 def powerToughnessLoyaltyProvider():
@@ -747,9 +782,11 @@ def negationTransformer(parameters):
 def queryParameterProvider():
     creatureStuff = orTransformer(negationTransformer(creatureTypeProvider())) if random.random() < .8 else " "
     colorStuff = orTransformer(negationTransformer(colorProvider(True if random.random() < .9 else False)))
-    return (
-        creatureStuff + " " + colorStuff 
-    ).strip()
+    manaStuff = manaCostProvider()
+    #return (
+        #creatureStuff + " " + colorStuff + " " + manaStuff
+    #).strip()
+    return manaStuff.strip()
 
 
 while True:
