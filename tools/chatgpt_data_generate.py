@@ -771,10 +771,6 @@ def orTransformer(parameters):
     return parameters
 
 
-def rangeTransformer(parameter):
-    pass
-
-
 def negationTransformer(parameters):
     return " ".join(["-" + p if random.random() < .1 else p for p in parameters.split(" ")])
 
@@ -783,10 +779,10 @@ def queryParameterProvider():
     creatureStuff = orTransformer(negationTransformer(creatureTypeProvider())) if random.random() < .8 else " "
     colorStuff = orTransformer(negationTransformer(colorProvider(True if random.random() < .9 else False)))
     manaStuff = manaCostProvider()
-    #return (
-        #creatureStuff + " " + colorStuff + " " + manaStuff
-    #).strip()
-    return manaStuff.strip()
+    return (
+        creatureStuff + " " + manaStuff
+    ).strip()
+    #return manaStuff.strip()
 
 
 while True:

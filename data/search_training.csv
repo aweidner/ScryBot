@@ -292,3 +292,14 @@ Cards that produce uncolored mana,https://api.scryfall.com/cards/search?q=produc
 Cards that produce red and blue mana,https://api.scryfall.com/cards/search?q=produces:{r}{u}
 Cards that produce red or blue mana,https://api.scryfall.com/cards/search?q=produces:{r} or produces:{u}
 Artifacts you can use in a golgari commander that have 2 green in their casting cost,https://api.scryfall.com/cards/search?q=type:Artifact id:golgari mana:{g}{g}
+pig,https://api.scryfall.com/cards/search?q=type:boar
+big pig,https://api.scryfall.com/cards/search?q=type:boar pow>3
+chungus,https://api.scryfall.com/cards/search?q=type:boar pow>5
+big chungus,https://api.scryfall.com/cards/search?q=type:boar pow>6
+biggest pig,https://api.scryfall.com/cards/search?q=type:boar pow>7
+rabbits that are less than one red blue and black mana,https://api.scryfall.com/cards/search?q=type:Rabbit mana<{R}{U}{B}
+performers that are at least two blue mana,https://api.scryfall.com/cards/search?q=type:Performer mana>={U}{U}
+drakes that do not cost one blue and one green,https://api.scryfall.com/cards/search?q=(type:Drake) mana!={G}{B}
+lizards that do not cost exactly one green,https://api.scryfall.com/cards/search?q=type:Lizard mana!={G}
+cards that cost over one black and one green,https://api.scryfall.com/cards/search?q=mana>{B}{G}
+cards that cost over one white,https://api.scryfall.com/cards/search?q=mana>{W}
